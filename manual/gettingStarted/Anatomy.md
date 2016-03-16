@@ -74,11 +74,11 @@ If a library needs a specific configuration file, try to file it under the `conf
 
 ## lib/ dizini
 
-The `lib` directory is optional and contains unmanaged library dependencies, ie. all JAR files you want to manually manage outside the build system. Just drop any JAR files here and they will be added to your application classpath.
+`lib` dizini isteğe bağlıdır ve build sistemin dışında, manuel olarak yönetmek istediğiniz tüm jar dosyaları gibi yönetilmeyen kütüphane bağımlılıklarını barındırır. Jar dosyaları bu dizine bırakılarak uygulama classpath'ine eklenebilirler.
 
 ## build.sbt dosyası
 
-Your project's main build declarations are generally found in `build.sbt` at the root of the project. `.scala` files in the `project/` directory can also be used to declare your project's build.
+Projenizin ana build tanımlamaları genellikle proje kökünde `build.sbt`dosyasında bulunur. `project/` dizinindeki `.scala` dosyalarıda projenin build tanımlamalarını yapmak için kullanılabilir.
 
 ## project/ dizini
 
