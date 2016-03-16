@@ -51,13 +51,13 @@ Tabiki kendi paketlerinizi ekleyebilirsiniz, örneğin bir `app/utils` paketi.
 
 > Note that in Play, the controllers, models and views package name conventions are now just that and can be changed if needed (such as prefixing everything with `com.yourcompany`).
 
-There is also an optional directory called `app/assets` for compiled assets such as [LESS sources](http://lesscss.org/) and [CoffeeScript sources](http://coffeescript.org/).
+Ayrıca isteğe bağlı olarak kullanılan, [LESS kaynakları](http://lesscss.org/) ve [CoffeeScript kaynakları](http://coffeescript.org/) gibi derlenmiş nesneler için kullanılan `app/assets` dizini mevcuttur.
 
 ## public/ dizini
 
-Resources stored in the `public` directory are static assets that are served directly by the Web server.
+`public` dizininde depolanan kaynaklar direkt olarak Web sunucularına hizmet eden statik nesnelerdir.
 
-This directory is split into three standard sub-directories for images, CSS stylesheets and JavaScript files. You should organize your static assets like this to keep all Play applications consistent.
+Bu dizin görüntüler(images), CSS dosyaları(stylesheets) ve Javascript dosyaları için üç alt dizine ayrılır. Tüm play uygulamalarını tutarlı bir halde tutabilmek için tüm statik nesnelerinizi bu şekilde organize etmelisiniz.
 
 > In a newly-created application, the `/public` directory is mapped to the `/assets` URL path, but you can easily change that, or even use several directories for your static assets.
 
@@ -68,9 +68,9 @@ This directory is split into three standard sub-directories for images, CSS styl
 - `application.conf`, uygulama için ana konfigürasyon dosyası, standart konfigürasyon parametrelerini içerir.
 - `routes`, rota tanım dosyası
 
-If you need to add configuration options that are specific to your application, it’s a good idea to add more options to the `application.conf` file.
+Eğer uygulamanıza özel bir ayar seçeneği eklemeye ihtiyacınız varsa, `application.conf` dosyasına daha fazla seçenek eklemek iyi bir fikirdir.
 
-If a library needs a specific configuration file, try to file it under the `conf` directory.
+Eğer bir kütüphane özel bir ayar dosyasına ihtiyaç duyuyorsa, o dosyayı `conf` dizininin altına koymayı deneyin.
 
 ## lib/ dizini
 
